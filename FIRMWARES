@@ -90,12 +90,9 @@ Currently supported boxes and firmwares
 
 ====== Fritz!Box Fiber (549x) ======
 
-* Fritz!Box 5490 Fiber (EXPERIMENTAL)
-	* 151.07.12 rev71192 (German & International)
-
 * Fritz!Box 5491 Fiber
 	* 171.07.01 rev64362 (German & International)
-	* 171.07.12 rev71193 (German & International)
+	* 171.07.12 (German & International)
 
 ====== Fritz!Box Cable (64xx/65xx) ======
 
@@ -117,8 +114,6 @@ Currently supported boxes and firmwares
 	* 142.06.83 rev43648 (German & International)
 	* 142.07.01 rev63482 (German & International)
 	* 142.07.12 rev71361 (German & International)
-* Fritz!Box 6820v2 LTE
-	* 142.07.12 rev71362 (German & International)
 * Fritz!Box 6840 LTE
 	* 105.06.30 rev31187
 	* 105.06.50 rev33168
@@ -323,7 +318,7 @@ Currently supported boxes and firmwares
 	* 154.07.01 rev61989 (International)
 	* 154.07.12 rev70402 (International)
 
-====== T-Com derivatives ======
+====== T-Com derivates ======
 
 * Eumex 300IP
 	* Alien Fritz!Box Fon
@@ -336,7 +331,7 @@ Currently supported boxes and firmwares
 * Speedport W920V
 	* Alien 7570 + T-Com 65.04.79 rev27472
 
-====== Alice derivatives ======
+====== Alice derivates ======
 
 * Alice IAD WLAN 3331
 	* Alien 7170

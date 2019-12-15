@@ -1,0 +1,30 @@
+--- CMakeLists.txt	2019-10-05 20:30:18.431578823 +0200
++++ CMakeLists.txt	2019-10-05 20:28:47.901967398 +0200
+@@ -15,9 +15,9 @@
+ 
+ set(with_crypto_library "mbedtls" CACHE STRING "build with the given crypto library, TYPE=mbedtls")
+ 
+-add_subdirectory(depends/mbedtls)
+-add_subdirectory(depends/zlib/staticbuild)
+-add_subdirectory(depends/pcre/staticbuild)
++#add_subdirectory(depends/mbedtls)
++#add_subdirectory(depends/zlib/staticbuild)
++#add_subdirectory(depends/pcre/staticbuild)
+ 
+ include ( cmake/dist.cmake )
+ include ( configure )
+@@ -25,11 +25,11 @@
+ configure_file ( ${CMAKE_CURRENT_SOURCE_DIR}/config.h.cmake ${CMAKE_CURRENT_BINARY_DIR}/config.h )
+ ADD_DEFINITIONS(-DHAVE_CONFIG_H)
+ 
+-add_subdirectory(depends/libsodium)
++#add_subdirectory(depends/libsodium)
+ add_subdirectory(libcork)
+ add_subdirectory(libipset)
+-add_subdirectory(depends/libuv)
+-add_subdirectory(depends/json-c/staticbuild)
++#add_subdirectory(depends/libuv)
++#add_subdirectory(depends/json-c/staticbuild)
+ add_subdirectory(depends/uv-mbed/win32)
+ 
+ include_directories( ${CMAKE_CURRENT_BINARY_DIR} )

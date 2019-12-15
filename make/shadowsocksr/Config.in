@@ -1,0 +1,11 @@
+config FREETZ_PACKAGE_SHADOWSOCKSR
+	bool "ShadowsocksR 0.5"
+	select FREETZ_LIB_libuv
+	select FREETZ_LIB_libz
+	select FREETZ_LIB_libpcre
+        select FREETZ_LIB_libjson_c
+	select FREETZ_LIB_libsodium
+	select FREETZ_LIB_libmbedtls
+	default n
+	help
+		ShadowsocksR-native is a lightweight secured SOCKS5 proxy for embedded devices and low-end boxes

@@ -147,9 +147,15 @@ Latest changes:
     * libtiff 4.0.7
     * libusb1 1.0.21
     * libvorbis 1.3.5
+<<<<<<< HEAD
+    * libxml 2.9.8
+    * libxslt/xsltproc 1.1.33-rc1
+    * lighttpd 1.4.54
+=======
     * libxml 2.9.9
     * libxslt/xsltproc 1.1.33
     * lighttpd 1.4.45
+>>>>>>> 77e64b8c6836cf807c915cbda6b757db068b463c
     * lsof 4.89
     * ltrace 0.7.91-git
     * lynx 2.8.8
@@ -165,7 +171,7 @@ Latest changes:
     * ntfs-3g 2017.3.23
     * obexftp 0.23
     * openconnect 7.04
-    * openssh 8.1p1
+    * openssh 7.9p1
     * openssl 0.9.8zh/1.0.2t
     * openvpn 2.4.8
     * pcre 8.43
