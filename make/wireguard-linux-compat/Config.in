@@ -6,7 +6,6 @@ config FREETZ_PACKAGE_WIREGUARD_LINUX_COMPAT
 	depends on FREETZ_KERNEL_VERSION_3_10_MIN && (FREETZ_AVM_HAS_CRYPTO_BLKCIPHER_BUILTIN || FREETZ_REPLACE_KERNEL) && FREETZ_REPLACE_MODULE_AVAILABLE
 	default n
 	select FREETZ_BUSYBOX_IP
-	select FREETZ_LIB_libmnl
 	select FREETZ_MODULE_wireguard
 	help
 		This package provides the kernel module required for Wireguard
