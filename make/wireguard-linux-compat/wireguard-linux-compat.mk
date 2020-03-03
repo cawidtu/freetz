@@ -7,6 +7,8 @@ $(PKG)_MODULE:=$($(PKG)_DIR)/src/wireguard.ko
 $(PKG)_TARGET_MODULE:=$(KERNEL_MODULES_DIR)/drivers/net/wireguard/wireguard.ko
 
 $(PKG)_DEPENDS_ON += kernel 
+$(PKG)_EXTRA_CFLAGS += #--function-section -fdata-sections -fstack-protector-strong
+$(PKG)_EXTRA_LDFLAGS += -Wl,--gc-sections
 
 $(PKG)_REBUILD_SUBOPTS += FREETZ_KERNEL_VERSION
 
@@ -19,7 +21,9 @@ $($(PKG)_MODULE): $($(PKG)_DIR)/.configured
 		SUBDIRS="$(FREETZ_BASE_DIR)/$(WIREGUARD_LINUX_COMPAT_DIR)/src" \
 		KERNELDIR="$(FREETZ_BASE_DIR)/$(KERNEL_SOURCE_DIR)" \
 		ARCH="$(KERNEL_ARCH)" \
-		CROSS_COMPILE="$(KERNEL_CROSS)"
+		CROSS_COMPILE="$(KERNEL_CROSS)" \
+		CFLAGS="$(WIREGUARD_LINUX_COMPAT_EXTRA_CFLAGS)" 
+
 
 $($(PKG)_TARGET_MODULE): $($(PKG)_MODULE)
 	$(INSTALL_FILE)
