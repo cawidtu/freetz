@@ -447,4 +447,11 @@ config FREETZ_PACKAGE_LIGHTTPD_MOD_WEBDAV_WITH_LOCKS
 	help
 		This option enables locks in mod_webdav.
 
+config FREETZ_PACKAGE_LIGHTTPD_MOD_WSTUNNEL
+        bool "include mod_wstunnel (adds about 21kb)"
+        default n
+        help
+                This option add mod_wstunnel to the image. 
+		Pelase see https://redmine.lighttpd.net/projects/1/wiki/Docs_ModWSTunnel
+		for more information on this module
 endmenu

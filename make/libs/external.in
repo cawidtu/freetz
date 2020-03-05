@@ -83,6 +83,7 @@ source make/libs/serf/external.in
 source make/slang/external.in.libs
 source make/libs/spandsp/external.in
 source make/libs/speex/external.in
+source make/libs/libsodium/external.in
 source make/sqlite/external.in.libs
 source make/libs/srtp/external.in
 source make/libs/libssh2/external.in

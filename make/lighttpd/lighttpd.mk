@@ -23,7 +23,7 @@ $(PKG)_MODULES_ALL := \
 	scgi secdownload setenv simple_vhost ssi staticfile status \
 	trigger_b4_dl \
 	uploadprogress userdir usertrack \
-	webdav
+	webdav wstunnel
 $(PKG)_MODULES := $(call PKG_SELECTED_SUBOPTIONS,$($(PKG)_MODULES_ALL),MOD)
 $(PKG)_MODULES_BUILD_DIR := $($(PKG)_MODULES:%=$($(PKG)_DIR)/src/.libs/mod_%.so)
 $(PKG)_MODULES_TARGET_DIR := $($(PKG)_MODULES:%=$($(PKG)_DEST_DIR)$($(PKG)_MODULES_DIR)/mod_%.so)

@@ -4,7 +4,6 @@ $(PKG)_SOURCE_MD5:=69fd78e373f2893b8742c5263464785d
 $(PKG)_SITE:=@SF/simpleobfs
 $(PKG)_BINARY:=$($(PKG)_DIR)/src/obfs-server
 $(PKG)_TARGET_BINARY:=$($(PKG)_DEST_DIR)/usr/sbin/obfs-server
-$(PKG)_CATEGORY:=Unstable
 
 $(PKG_SOURCE_DOWNLOAD)
 $(PKG_UNPACKED)
