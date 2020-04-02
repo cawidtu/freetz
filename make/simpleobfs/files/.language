@@ -1,0 +1,11 @@
+languages
+{ de en }
+default
+{ de }
+files
+{
+	etc/default.simpleobfs/simpleobfs_conf.def
+	etc/default.simpleobfs/simpleobfs.cfg
+	etc/init.d/rc.simpleobfs
+	usr/lib/cgi-bin/simpleobfs.cgi
+}
