@@ -5,10 +5,9 @@ $(PKG)_SITE:=https://github.com/ShadowsocksR-Live/shadowsocksr-native/archive/
 
 $(PKG)_BINARY:=$($(PKG)_DIR)/src/ssr-server
 $(PKG)_TARGET_BINARY:=$($(PKG)_DEST_DIR)/usr/sbin/ssr-server
-$(pkg)-cmake:=$($(PKG)_DIR)$/.cmade
+$(pkg)-cmake:=$($(PKG)_DIR)/.cmade
 
 $(PKG)_DEPENDS_ON += mbedtls zlib pcre libuv libsodium libjson-c
-$(PKG)_REBUILD_SUBOPTS += FREETZ_LIB_libmbedtls FREETZ_LIB_libz FREETZ_LIB_libpcre FREETZ_LIB_libuv FREETZ_LIB_libsodum FREETZ_LIB_libjson_c 
 
 $(PKG)_STARTLEVEL=90
 
