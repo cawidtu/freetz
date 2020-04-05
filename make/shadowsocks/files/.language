@@ -1,0 +1,11 @@
+languages
+{ de en }
+default
+{ de }
+files
+{
+	etc/default.shadowsocks/shadowsocks_conf.def
+	etc/default.shadowsocks/shadowsocks.cfg
+	etc/init.d/rc.shadowsocks
+	usr/lib/cgi-bin/shadowsocks.cgi
+}

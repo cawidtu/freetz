@@ -1,0 +1,7 @@
+config EXTERNAL_FREETZ_PACKAGE_TROJAN
+	depends on EXTERNAL_ENABLED && FREETZ_PACKAGE_TROJAN
+	bool "Trojan"
+	default n
+	help
+		externals the following file(s):
+		 /usr/sbin/trojan

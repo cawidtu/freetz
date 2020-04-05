@@ -1,0 +1,7 @@
+config EXTERNAL_FREETZ_PACKAGE_ACME
+	depends on EXTERNAL_ENABLED && FREETZ_PACKAGE_ACME
+	bool "acme"
+	default n
+	help
+		externals the following file(s):
+		 /usr/bin/acme.sh and subdirectories /usr/bin/acme/deploy /usr/bin/acme/dnsapi /usr/bin/acme/notify

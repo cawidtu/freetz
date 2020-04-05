@@ -1,0 +1,7 @@
+CAPTION='Trojan: $(lang de:"Konfiguration" en:"Configuration")'
+
+CONFIG_FILE='/tmp/flash/trojan/config.json'
+CONFIG_SAVE='modsave flash; [ "$(/mod/etc/init.d/rc.trojan status)" != "stopped" ] && /mod/etc/init.d/rc.trojan restart'
+CONFIG_TYPE='text'
+
+TEXT_ROWS=30

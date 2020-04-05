@@ -1,0 +1,34 @@
+--- src/core/config.cpp	2020-04-03 11:41:24.007615903 +0200
++++ src/core/config.cpp	2020-04-03 11:41:37.277377006 +0200
+@@ -141,19 +141,19 @@
+     char mdString[(EVP_MAX_MD_SIZE << 1) + 1];
+     unsigned int digest_len;
+     EVP_MD_CTX *ctx;
+-    if ((ctx = EVP_MD_CTX_new()) == NULL) {
++    if ((ctx = EVP_MD_CTX_create()) == NULL) {
+         throw runtime_error("could not create hash context");
+     }
+     if (!EVP_DigestInit_ex(ctx, EVP_sha224(), NULL)) {
+-        EVP_MD_CTX_free(ctx);
++        EVP_MD_CTX_destroy(ctx);
+         throw runtime_error("could not initialize hash context");
+     }
+     if (!EVP_DigestUpdate(ctx, message.c_str(), message.length())) {
+-        EVP_MD_CTX_free(ctx);
++        EVP_MD_CTX_destroy(ctx);
+         throw runtime_error("could not update hash");
+     }
+     if (!EVP_DigestFinal_ex(ctx, digest, &digest_len)) {
+-        EVP_MD_CTX_free(ctx);
++        EVP_MD_CTX_destroy(ctx);
+         throw runtime_error("could not output hash");
+     }
+ 
+@@ -161,6 +161,6 @@
+         sprintf(mdString + (i << 1), "%02x", (unsigned int)digest[i]);
+     }
+     mdString[digest_len << 1] = '\0';
+-    EVP_MD_CTX_free(ctx);
++    EVP_MD_CTX_destroy(ctx);
+     return string(mdString);
+ }

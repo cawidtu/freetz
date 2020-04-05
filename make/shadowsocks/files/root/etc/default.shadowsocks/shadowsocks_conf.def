@@ -1,0 +1,7 @@
+CAPTION='Shadowsocks: Konfiguration'
+
+CONFIG_FILE='/tmp/flash/shadowsocks/shadowsocks.conf'
+CONFIG_SAVE='modsave flash; [ "$(/mod/etc/init.d/rc.shadowsocks status)" != "stopped" ] && /mod/etc/init.d/rc.shadowsocks restart'
+CONFIG_TYPE='text'
+
+TEXT_ROWS=30

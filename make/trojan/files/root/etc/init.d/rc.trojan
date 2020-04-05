@@ -1,0 +1,54 @@
+#!/bin/sh
+
+DAEMON=trojan
+DAEMON_BIN=trojan
+DAEMON_CONFIG=/tmp/flash/${DAEMON}/config.json
+PID_FILE=/var/run/${DAEMON_BIN}.pid
+. /etc/init.d/modlibrc
+
+[ -r /etc/options.cfg ] && . /etc/options.cfg
+
+
+start() {
+	modlib_startdaemon $DAEMON_BIN -d -c $DAEMON_CONFIG $TROJAN_CMDLINE 
+	return 0
+}
+
+case $1 in
+	""|load)
+
+		mkdir -p "/tmp/flash/${DAEMON}"
+
+		[ ! -e "$DAEMON_CONFIG" ] && /mod/etc/default.$DAEMON/${DAEMON_BIN}_conf > $DAEMON_CONFIG
+
+		modreg cgi "$DAEMON" "Trojan"
+		modreg daemon $DAEMON
+		modreg file $DAEMON conf '$(lang de:"Konfiguration" en:"Configuration")' 0 "trojan_conf"
+
+		modlib_start $TROJAN_ENABLED
+		;;
+	unload)
+		modunreg file $DAEMON
+		modunreg daemon $DAEMON
+		modunreg cgi $DAEMON
+		modlib_stop
+		;;
+	start)
+		modlib_start
+		;;
+	stop)
+		modlib_stop
+		;;
+	restart)
+		modlib_restart
+		;;
+	status)
+		modlib_status
+		;;
+	*)
+		echo "Usage: $0 [load|unload|start|stop|restart|status]" 1>&2
+		exit 1
+		;;
+esac
+
+exit 0
