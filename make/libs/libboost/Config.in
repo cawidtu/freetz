@@ -1,0 +1,11 @@
+config FREETZ_LIB_libboost_system
+	bool "libboost_system (libboost_system.so)"
+	default n
+	help
+		boost system library
+
+config FREETZ_LIB_libboost_program_options
+	bool "libboost_program_options (libboost_program_options.so)"
+	default n
+	help	
+		boost program options library

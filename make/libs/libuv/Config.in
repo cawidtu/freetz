@@ -1,0 +1,6 @@
+config FREETZ_LIB_libuv
+	bool "libuv (libuv.so)"
+#	select FREETZ_LIB_libm
+	default n
+	help
+		lbuv is a multi-platform support library with a focus on asynchronous I/O.

@@ -1,0 +1,3 @@
+ifeq ($(or $(strip $(FREETZ_LIB_libboost_system)), $(strip $(FREETZ_LIB_libboost_program_options))),y)
+LIBS+=libboost
+endif

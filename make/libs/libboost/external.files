@@ -1,0 +1,2 @@
+[ "$EXTERNAL_FREETZ_LIB_libboost_system" == "y" ] && EXTERNAL_FILES+=" ${FREETZ_LIBRARY_DIR}/libboost_system.so.1.72.0"
+[ "$EXTERNAL_FREETZ_LIB_libboost_program_options" == "y" ] && EXTERNAL_FILES+=" ${FREETZ_LIBRARY_DIR}/libboost_program_options.so.1.72.0"

@@ -1,0 +1,5 @@
+config FREETZ_LIB_libcares
+	bool "c-ares (libcares.so)"
+	default n
+	help
+		Libcares I do not know

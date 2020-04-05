@@ -1,0 +1,17 @@
+config EXTERNAL_FREETZ_LIB_libboost_system
+        depends on EXTERNAL_ENABLED && FREETZ_LIB_libboost_system
+        bool "libboost_system"
+        default n
+        help
+                externals the following file(s):
+                 ${FREETZ_LIBRARY_DIR}/libboost_system.so.*
+
+config EXTERNAL_FREETZ_LIB_libboost_program_options
+        depends on EXTERNAL_ENABLED && FREETZ_LIB_libboost_program_options
+        bool "libboost_program_options"
+        default n
+        help
+                externals the following file(s):
+                 ${FREETZ_LIBRARY_DIR}/libboost_program_options.so.*
+
+

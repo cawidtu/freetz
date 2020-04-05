@@ -1,0 +1,12 @@
+--- configure	2018-03-05 14:26:20.284023875 +0100
++++ ../../../../source/target-mips_gcc-4.8.5_uClibc-0.9.33.2-nptl/libcares-1.14.0/configure	2018-03-05 14:27:25.748024464 +0100
+@@ -3944,9 +3944,6 @@
+   xc_bad_var_cflags=no
+   for xc_word in $CFLAGS; do
+     case "$xc_word" in
+-      -D*)
+-        xc_bad_var_cflags=yes
+-        ;;
+       -U*)
+         xc_bad_var_cflags=yes
+         ;;

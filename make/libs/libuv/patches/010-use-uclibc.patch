@@ -1,0 +1,16 @@
+--- src/unix/thread.c	2019-04-12 22:06:33.720877346 +0200
++++ src/unix/thread.c	2019-04-12 22:03:29.551692768 +0200
+@@ -37,9 +37,13 @@
+ #include <sys/sem.h>
+ #endif
+ 
++#if defined(__UCLIBC__)
++#define gnu_get_libc_version(x) "uClibc"
++#else
+ #ifdef __GLIBC__
+ #include <gnu/libc-version.h>  /* gnu_get_libc_version() */
+ #endif
++#endif
+ 
+ #undef NANOSEC
+ #define NANOSEC ((uint64_t) 1e9)
