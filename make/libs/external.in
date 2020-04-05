@@ -22,6 +22,8 @@ source make/e2fsprogs/external.in.libs
 source make/libs/libelf/external.in
 source make/libs/libev/external.in
 source make/libs/libevent/external.in
+source make/libs/libuv/external.in
+source make/libs/libjson-c/external.in
 source make/libs/libexif/external.in
 source make/libs/expat/external.in
 source make/libs/flac/external.in
@@ -72,6 +74,7 @@ source make/libs/pjproject2/external.in
 source make/rrdtool/external.in.libs
 source make/libs/libpcap/external.in
 source make/libs/pcre/external.in
+source make/libs/libboost/external.in
 source make/pcsc-lite/external.in.libs
 source make/libs/libpng/external.in
 source make/libs/polarssl12/external.in
@@ -84,6 +87,7 @@ source make/slang/external.in.libs
 source make/libs/spandsp/external.in
 source make/libs/speex/external.in
 source make/libs/libsodium/external.in
+source make/libs/libcares/external.in
 source make/sqlite/external.in.libs
 source make/libs/srtp/external.in
 source make/libs/libssh2/external.in

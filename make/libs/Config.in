@@ -210,6 +210,12 @@ source make/libs/uclibc/Config.in
 
 endmenu ### "uClibc"
 
+menu "Boost C++ libraries"
+
+source make/libs/libboost/Config.in
+
+endmenu ### "Boost"
+
 menu "USB & FTDI"
 
 source make/libs/libusb/Config.in

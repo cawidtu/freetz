@@ -10,7 +10,7 @@ PID_FILE=/var/run/${DAEMON_BIN}.pid
 
 
 start() {
-	modlib_startdaemon $DAEMON_BIN -d -c $DAEMON_CONFIG $SHADOWSOCKS_CMDLINE 
+	modlib_startdaemon $DAEMON_BIN -d -c $DAEMON_CONFIG $SHADOWSOCKSR_CMDLINE 
 	return 0
 }
 
