@@ -10,7 +10,7 @@ PID_FILE=/var/run/${DAEMON_BIN}.pid
 
 
 start() {
-	modlib_startdaemon $DAEMON_BIN -d -c $DAEMON_CONFIG $TROJAN_CMDLINE 
+	modlib_startdaemon $DAEMON_BIN -c $DAEMON_CONFIG $TROJAN_CMDLINE 
 	return 0
 }
 

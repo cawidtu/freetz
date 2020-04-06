@@ -4,7 +4,7 @@ default
 { en }
 files
 {
-	etc/default.trojanr/trojan_conf.def
+	etc/default.trojan/trojan_conf.def
 	etc/init.d/rc.trojan
 	usr/lib/cgi-bin/trojan.cgi
 }

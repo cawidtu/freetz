@@ -1,7 +1,7 @@
-$(call PKG_INIT_BIN, 0.0.1)
+$(call PKG_INIT_BIN, 3.3.4)
 $(PKG)_SOURCE:=shadowsocks-libev-$($(PKG)_VERSION).tar.gz
-$(PKG)_SOURCE_MD5:=ddaf810c98bebbf1778dd802184f4b3f
-$(PKG)_SITE:=https://github.com/owsocks/shadowsocks-libev/releases/download/v$($(PKG)_VERSION)
+$(PKG)_SOURCE_MD5:=fb41e60db217b658a14fe3519cd78c62
+$(PKG)_SITE:=https://github.com/shadowsocks/shadowsocks-libev/releases/download/v$($(PKG)_VERSION)
 
 $(PKG)_BINARY:=$($(PKG)_DIR)/src/ss-server
 $(PKG)_TARGET_BINARY:=$($(PKG)_DEST_DIR)/usr/sbin/ss-server

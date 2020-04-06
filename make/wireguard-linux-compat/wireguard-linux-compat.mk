@@ -1,6 +1,6 @@
-$(call PKG_INIT_BIN, 0.0.20200215)
+$(call PKG_INIT_BIN, 1.0.20200401)
 $(PKG)_SOURCE:=wireguard-linux-compat-$($(PKG)_VERSION).tar.xz
-$(PKG)_SOURCE_SHA256:=0def6f3608ec06f6dfc454aa5281a7c38b06ff27096cb341448d20602da4e923
+$(PKG)_SOURCE_SHA256:=7dfb4a8315e1d6ae406ff32d01c496175df558dd65968a19e5222d02c7cfb77a
 $(PKG)_SITE:=https://git.zx2c4.com/wireguard-linux-compat/snapshot
 
 $(PKG)_MODULE:=$($(PKG)_DIR)/src/wireguard.ko

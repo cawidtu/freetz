@@ -1,7 +1,9 @@
-$(call PKG_INIT_BIN, 0.0.1)
-$(PKG)_SOURCE:=simple-obfs-$($(PKG)_VERSION).tar.gz
-$(PKG)_SOURCE_MD5:=69fd78e373f2893b8742c5263464785d
-$(PKG)_SITE:=@SF/simpleobfs
+$(call PKG_INIT_BIN, 486bebd9208539058e57e23a12f23103016e09b4)
+$(PKG)_SOURCE:=$(pkg)-$($(PKG)_VERSION).tar.xz
+$(PKG)_SOURCE_CHECKSUM:=X
+$(PKG)_SITE:=git@https://github.com/shadowsocks/simple-obfs.git
+
+
 $(PKG)_BINARY:=$($(PKG)_DIR)/src/obfs-server
 $(PKG)_TARGET_BINARY:=$($(PKG)_DEST_DIR)/usr/sbin/obfs-server
 
