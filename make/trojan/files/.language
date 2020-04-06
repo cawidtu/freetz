@@ -5,6 +5,7 @@ default
 files
 {
 	etc/default.trojan/trojan_conf.def
+	etc/default.trojan/trojan_conf
 	etc/init.d/rc.trojan
 	usr/lib/cgi-bin/trojan.cgi
 }
