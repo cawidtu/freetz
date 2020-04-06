@@ -1,0 +1,50 @@
+#!/bin/sh
+cat << EOF
+{
+    "run_type": "server",
+    "local_addr": "0.0.0.0",
+    "local_port": 443,
+    "remote_addr": "127.0.0.1",
+    "remote_port": 80,
+    "password": [
+        "changeme"
+    ],
+    "log_level": 1,
+    "ssl": {
+        "cert": "/var/flash/websrv_ssl_cert.pem"
+        "key": "/var/flash/websrv_ssl_key.pem",
+        "key_password": "use box pass",
+        "cipher": "EECDH+AESGCM:EDH+AESGCM:AES128+EECDH:AES128+EDH",
+        "cipher_tls13": "",
+        "prefer_server_cipher": true,
+        "alpn": [
+            "http/1.1"
+        ],
+        "alpn_port_override": {
+            "h2": 81
+        },
+        "reuse_session": true,
+        "session_ticket": false,
+        "session_timeout": 3000,
+        "plain_http_response": "",
+        "curves": "",
+        "dhparam": ""
+    },
+    "tcp": {
+        "prefer_ipv4": false,
+        "no_delay": true,
+        "keep_alive": true,
+        "reuse_port": false,
+        "fast_open": false,
+        "fast_open_qlen": 20
+    },
+    "mysql": {
+        "enabled": false,
+        "server_addr": "127.0.0.1",
+        "server_port": 3306,
+        "database": "trojan",
+        "username": "trojan",
+        "password": "",
+        "cafile": ""
+    }
+}
