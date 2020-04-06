@@ -11,6 +11,9 @@ PID_FILE=/var/run/${DAEMON_BIN}.pid
 
 start() {
 	modlib_startdaemon $DAEMON_BIN -c $DAEMON_CONFIG $TROJAN_CMDLINE &
+        sleep 1
+        #echo $! > $PID_FILE
+        ps | grep trojan | grep -v grep | grep -v rc.trojan | awk '{print $1}' | sort | head -1 > $PID_FILE
 	return 0
 }
 
