@@ -1,4 +1,8 @@
+comment "Trojan (not available, needs libstdc++ as Standard C++ Library)"
+        depends on !FREETZ_STDCXXLIB_USE_GNULIBSTDCXX
+
 config FREETZ_PACKAGE_TROJAN
+	depends on FREETZ_STDCXXLIB_USE_GNULIBSTDCXX
 	bool "Trojan 1.15.1"
 	select FREETZ_LIB_libboost_system
 	select FREETZ_LIB_libboost_program_options

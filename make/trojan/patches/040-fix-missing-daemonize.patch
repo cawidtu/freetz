@@ -1,0 +1,33 @@
+--- src/main.cpp	2020-04-06 20:01:55.176210105 +0200
++++ src/main.cpp	2020-04-06 19:54:22.894232149 +0200
+@@ -63,6 +63,30 @@
+ 
+ int main(int argc, const char *argv[]) {
+     try {
++
++	 int i, j;
++
++    	for (i=1; i<argc; i++)
++        if (strcmp(argv[i], "--daemon") == 0)
++        {
++         for (j = i+1; j<argc; j++)
++         argv[j-1] = argv[j];
++
++         argv[argc - 1] = NULL;
++
++         if (fork() != 0) exit(0);
++
++	 setsid(); // become process group leader
++  	//if (fork()) _exit(0); // second parent exits.
++  	 chdir("/"); // just so we don't mysteriously prevent fs unmounts later
++  	 close(0); // close stdin, stdout, stderr.
++  	 close(1);
++  	 close(2);
++
++         execv(argv[0], (char**) argv);
++
++         return 0;
++        }
+         Log::log("Welcome to trojan " + Version::get_version(), Log::FATAL);
+         string config_file;
+         string log_file;

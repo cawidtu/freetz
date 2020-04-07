@@ -2,6 +2,7 @@
 
 DAEMON=trojan
 DAEMON_BIN=trojan
+DAEMON_BIN_FULL=/usr/sbin/trojan
 DAEMON_CONFIG=/tmp/flash/${DAEMON}/config.json
 PID_FILE=/var/run/${DAEMON_BIN}.pid
 . /etc/init.d/modlibrc
@@ -10,7 +11,7 @@ PID_FILE=/var/run/${DAEMON_BIN}.pid
 
 
 start() {
-	modlib_startdaemon $DAEMON_BIN -c $DAEMON_CONFIG $TROJAN_CMDLINE &
+	modlib_startdaemon $DAEMON_BIN_FULL --daemon -c $DAEMON_CONFIG $TROJAN_CMDLINE 
         sleep 1
         #echo $! > $PID_FILE
         ps | grep trojan | grep -v grep | grep -v rc.trojan | awk '{print $1}' | sort | head -1 > $PID_FILE

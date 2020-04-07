@@ -83,8 +83,8 @@ Latest changes:
     * spandsp 0.0.6pre21
     * squashfs-tools 3.4
     * squashfs-tools 4.3 (modified to support AVM-BE format)
-    * wireguard-tools 1.0.20200206
-    * wireguard-linux-compat 0.0.20200215
+    * wireguard-tools 1.0.20200319
+    * wireguard-linux-compat 0.0.20200401
     * xz 5.2.4
 
 - Updated tools and hooks:
@@ -129,7 +129,7 @@ Latest changes:
     * iodine 0.7.0
     * jpeg 6b2
     * knock 0.7
-    * lftp 4.8.4
+    * lftp 4.9.1
     * libcapi avm-(7390|7270).05.50
     * libconfig 1.5
     * libevent 2.1.11
