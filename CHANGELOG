@@ -84,7 +84,7 @@ Latest changes:
     * squashfs-tools 3.4
     * squashfs-tools 4.3 (modified to support AVM-BE format)
     * wireguard-tools 1.0.20200319
-    * wireguard-linux-compat 0.0.20200401
+    * wireguard-linux-compat 1.0.20200429
     * xz 5.2.4
 
 - Updated tools and hooks:
@@ -102,7 +102,7 @@ Latest changes:
     * CCID 1.4.18
     * cifs-utils 6.6
     * cryptsetup 1.7.0
-    * curl 7.69.1
+    * curl 7.70.0
     * davfs2 1.5.2
     * dbus 1.8.20
     * dnsmasq 2.80
@@ -119,7 +119,7 @@ Latest changes:
     * gmp 6.1.2
     * gnu-make 4.2.1
     * gnutls 3.5.19
-    * haproxy 1.8.24
+    * haproxy 1.8.25
     * haserl 0.9.35
     * hplip 3.14.6
     * htop 1.0.3
@@ -154,7 +154,7 @@ Latest changes:
     * lsof 4.89
     * ltrace 0.7.91-git
     * lynx 2.8.8
-    * mc 4.8.23
+    * mc 4.8.24
     * minidlna 1.2.1
     * mpc 1.1.0
     * mpfr 3.1.6
@@ -166,7 +166,7 @@ Latest changes:
     * ntfs-3g 2017.3.23
     * obexftp 0.23
     * openconnect 7.04
-    * openssh 8.1p1
+    * openssh 8.2p1
     * openssl 0.9.8zh/1.0.2u
     * openvpn 2.4.8
     * pcre 8.43
@@ -188,10 +188,10 @@ Latest changes:
     * rsync 3.1.2
     * samba 3.6.25
     * sane-backends 1.0.27
-    * screen 4.6.2
+    * screen 4.8.0
     * slang 2.3.1a
     * smartmontools 6.6
-    * sqlite 3.30.1
+    * sqlite 3.31.1
     * sslh 1.19c
     * strace 4.9 (kernel-2.6.13) / 5.0 (all other kernel versions)
     * stunnel 5.56
