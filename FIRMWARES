@@ -285,7 +285,7 @@ Currently supported boxes and firmwares
 	* 164.07.02 rev62311
 	* 164.07.14 rev73183
 	* 164.07.02 rev62314 (International)
-	* 164.07.12 rev70717 (International)
+	* 164.07.13 rev75481 (International)
 
 * Fritz!Box Fon WLAN 7560
 	* 149.06.53 rev41227
@@ -309,7 +309,7 @@ Currently supported boxes and firmwares
 
 * Fritz!Box Fon WLAN 7583
 	* 167.07.12 rev70707
-	* 167.07.14 rev74588 (International)
+	* 167.07.15 rev75887 (International)
 
 * Fritz!Box Fon WLAN 7590
 	* 154.06.86 rev45533
@@ -347,4 +347,4 @@ Currently supported boxes and firmwares
 	* 134.07.12 rev70775
 
 * FRITZ!Repeater 3000 (EXPERIMENTAL)
-	* 174.07.12 rev70612
+	* 174.07.14 rev73940

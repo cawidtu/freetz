@@ -451,7 +451,7 @@ menu "Override options"
 		#
 		default "FRITZ.Box_2170.51.04.57.image"                                                                            if FREETZ_TYPE_FIRMWARE_FINAL && FREETZ_TYPE_2170
 		#
-		default "FRITZ.Repeater_3000-07.12.image"                                                                          if FREETZ_TYPE_FIRMWARE_FINAL && FREETZ_TYPE_3000 && FREETZ_TYPE_FIRMWARE_07_1X
+		default "FRITZ.Repeater_3000-07.14.image"                                                                          if FREETZ_TYPE_FIRMWARE_FINAL && FREETZ_TYPE_3000 && FREETZ_TYPE_FIRMWARE_07_1X
 		#
 		default "fritz.box_sl_wlan.09.04.34.image"                                                                         if FREETZ_TYPE_FIRMWARE_FINAL && FREETZ_TYPE_3020
 		#
@@ -671,7 +671,7 @@ menu "Override options"
 		default "FRITZ.Box_7530.164.07.02.image"                                                                           if FREETZ_TYPE_FIRMWARE_FINAL && FREETZ_TYPE_7530 && FREETZ_TYPE_LANG_DE && FREETZ_TYPE_FIRMWARE_07_0X
 		default "FRITZ.Box_7530.164.07.14.image/FRITZ.Box_7530-07.14.image"                                                if FREETZ_TYPE_FIRMWARE_FINAL && FREETZ_TYPE_7530 && FREETZ_TYPE_LANG_DE && FREETZ_TYPE_FIRMWARE_07_1X
 		default "FRITZ.Box_7530.en-de-es-it-fr-pl-nl.164.07.02.image"                                                      if FREETZ_TYPE_FIRMWARE_FINAL && FREETZ_TYPE_7530 && FREETZ_TYPE_LANG_EN && FREETZ_TYPE_FIRMWARE_07_0X
-		default "FRITZ.Box_7530.en-de-es-it-fr-pl-nl.164.07.12.image/FRITZ.Box_7530-07.12.image"                           if FREETZ_TYPE_FIRMWARE_FINAL && FREETZ_TYPE_7530 && FREETZ_TYPE_LANG_EN && FREETZ_TYPE_FIRMWARE_07_1X
+		default "FRITZ.Box_7530.en-de-es-it-fr-pl-nl.164.07.13.image/FRITZ.Box_7530-07.13.image"                           if FREETZ_TYPE_FIRMWARE_FINAL && FREETZ_TYPE_7530 && FREETZ_TYPE_LANG_EN && FREETZ_TYPE_FIRMWARE_07_1X
 		#
 		default "FRITZ.Box_7560.149.06.53.image"                                                                           if FREETZ_TYPE_FIRMWARE_FINAL && FREETZ_TYPE_7560 && FREETZ_TYPE_LANG_DE && FREETZ_TYPE_FIRMWARE_06_5X
 		default "FRITZ.Box_7560.149.06.83.image"                                                                           if FREETZ_TYPE_FIRMWARE_FINAL && FREETZ_TYPE_7560 && FREETZ_TYPE_LANG_DE && FREETZ_TYPE_FIRMWARE_06_8X
@@ -691,7 +691,7 @@ menu "Override options"
 		default "FRITZ.Box_7580.153.07.12.image/FRITZ.Box_7580-07.12.image"                                                if FREETZ_TYPE_FIRMWARE_FINAL && FREETZ_TYPE_7580 && FREETZ_TYPE_LANG_DE && FREETZ_TYPE_FIRMWARE_07_1X
 		#
 		default "FRITZ.Box_7583.167.07.12.image/FRITZ.Box_7583-07.12.image"                                                if FREETZ_TYPE_FIRMWARE_FINAL && FREETZ_TYPE_7583 && FREETZ_TYPE_LANG_DE && FREETZ_TYPE_FIRMWARE_07_1X
-		default "FRITZ.Box_7583.en-de-es-it-fr-pl-nl.167.07.14.image/FRITZ.Box_7583-07.14.image"                           if FREETZ_TYPE_FIRMWARE_FINAL && FREETZ_TYPE_7583 && FREETZ_TYPE_LANG_EN && FREETZ_TYPE_FIRMWARE_07_1X
+		default "FRITZ.Box_7583.en-de-es-it-fr-pl-nl.167.07.15.image/FRITZ.Box_7583-07.15.image"                           if FREETZ_TYPE_FIRMWARE_FINAL && FREETZ_TYPE_7583 && FREETZ_TYPE_LANG_EN && FREETZ_TYPE_FIRMWARE_07_1X
 		#
 		default "FRITZ.Box_7590.154.06.86.image"                                                                           if FREETZ_TYPE_FIRMWARE_FINAL && FREETZ_TYPE_7590 && FREETZ_TYPE_LANG_DE && FREETZ_TYPE_FIRMWARE_06_8X
 		default "FRITZ.Box_7590.154.06.92.image"                                                                           if FREETZ_TYPE_FIRMWARE_FINAL && FREETZ_TYPE_7590 && FREETZ_TYPE_LANG_DE && FREETZ_TYPE_FIRMWARE_06_9X
@@ -720,7 +720,7 @@ menu "Override options"
 		#
 		default "7b109464d953dac912352dd9906c9d61"  if FREETZ_TYPE_2170
 		#
-		default "5d5966eee224fe397e42797f9259190b"  if FREETZ_TYPE_3000 && FREETZ_TYPE_FIRMWARE_07_1X
+		default "57536b28df92c078b13f9fa5813f5413"  if FREETZ_TYPE_3000 && FREETZ_TYPE_FIRMWARE_07_1X
 		#
 		default "f483cfab8da97207248f5e0703993a72"  if FREETZ_TYPE_3020
 		#
@@ -940,7 +940,7 @@ menu "Override options"
 		default "d8a6e8ccf70f5be62f1e6ff3e2ca35bd"  if FREETZ_TYPE_7530 && FREETZ_TYPE_LANG_DE && FREETZ_TYPE_FIRMWARE_07_0X
 		default "56050ac2eb5b942cbf85455849a5c503"  if FREETZ_TYPE_7530 && FREETZ_TYPE_LANG_DE && FREETZ_TYPE_FIRMWARE_07_1X
 		default "4c523db777fb2d628c47b38ab9939ce4"  if FREETZ_TYPE_7530 && FREETZ_TYPE_LANG_EN && FREETZ_TYPE_FIRMWARE_07_0X
-		default "06ab65133b775f05b7805205e5dde8db"  if FREETZ_TYPE_7530 && FREETZ_TYPE_LANG_EN && FREETZ_TYPE_FIRMWARE_07_1X
+		default "99b6e225084f4c54c268087aa5a98da5"  if FREETZ_TYPE_7530 && FREETZ_TYPE_LANG_EN && FREETZ_TYPE_FIRMWARE_07_1X
 		#
 		default "d971ac5a27864b3284ddbd38d4efbaef"  if FREETZ_TYPE_7560 && FREETZ_TYPE_LANG_DE && FREETZ_TYPE_FIRMWARE_06_5X
 		default "f1698e218e20cce40d109ef1937592ce"  if FREETZ_TYPE_7560 && FREETZ_TYPE_LANG_DE && FREETZ_TYPE_FIRMWARE_06_8X
@@ -960,7 +960,7 @@ menu "Override options"
 		default "d6a842ff7b77ec75eb6b075e35c6fe3c"  if FREETZ_TYPE_7580 && FREETZ_TYPE_LANG_DE && FREETZ_TYPE_FIRMWARE_07_1X
 		#
 		default "2525b5860257f127d0fb3c18a076cfe9"  if FREETZ_TYPE_7583 && FREETZ_TYPE_LANG_DE && FREETZ_TYPE_FIRMWARE_07_1X
-		default "c77abaa58840049034ed38956267070e"  if FREETZ_TYPE_7583 && FREETZ_TYPE_LANG_EN && FREETZ_TYPE_FIRMWARE_07_1X
+		default "49e26aaef710c31839285f6a431da13f"  if FREETZ_TYPE_7583 && FREETZ_TYPE_LANG_EN && FREETZ_TYPE_FIRMWARE_07_1X
 		#
 		default "d4aaca6e08639b532489415bb719b3b2"  if FREETZ_TYPE_7590 && FREETZ_TYPE_LANG_DE && FREETZ_TYPE_FIRMWARE_06_8X
 		default "e7a940dd13debd5531cefef1b68d4cce"  if FREETZ_TYPE_7590 && FREETZ_TYPE_LANG_DE && FREETZ_TYPE_FIRMWARE_06_9X
