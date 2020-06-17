@@ -1,7 +1,8 @@
-$(call PKG_INIT_BIN, 0.0.2)
-$(PKG)_SOURCE:=shadowsocksr-native-$($(PKG)_VERSION).tar.gz
-$(PKG)_SOURCE_MD5:=f3adf5417504e27f3ac84a2d1fba921b
+$(call PKG_INIT_BIN, 0.8)
+$(PKG)_SOURCE:=$($(PKG)_VERSION).tar.gz
+$(PKG)_SOURCE_MD5:=5610917e6e3ea6fe4bb8c07cfdfecb22
 $(PKG)_SITE:=https://github.com/ShadowsocksR-Live/shadowsocksr-native/archive/
+
 
 $(PKG)_BINARY:=$($(PKG)_DIR)/src/ssr-server
 $(PKG)_TARGET_BINARY:=$($(PKG)_DEST_DIR)/usr/sbin/ssr-server
