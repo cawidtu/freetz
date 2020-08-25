@@ -47,7 +47,7 @@ Latest changes:
     * avm-forwarding 0.0.1
     * axTLS wrapper 1.4.9
     * bvi 1.4.0
-    * CA certificates 2020-06-24
+    * CA certificates 2020-07-22
     * cntlm 0.93beta5
     * decrypt FRITZ!OS configs v0.2 (renamed version of PeterPawn's script decode_passwords)
     * ISC dhcp 4.3.6-P1
@@ -83,8 +83,8 @@ Latest changes:
     * spandsp 0.0.6pre21
     * squashfs-tools 3.4
     * squashfs-tools 4.3 (modified to support AVM-BE format)
-    * wireguard-tools 1.0.20200319
-    * wireguard-linux-compat 1.0.20200429
+    * wireguard-tools 1.0.20200820
+    * wireguard-linux-compat 1.0.20200729
     * xz 5.2.4
 
 - Updated tools and hooks:
@@ -102,12 +102,12 @@ Latest changes:
     * CCID 1.4.18
     * cifs-utils 6.6
     * cryptsetup 1.7.0
-    * curl 7.71.1
+    * curl 7.72.0
     * davfs2 1.5.2
     * dbus 1.8.20
-    * dnsmasq 2.81
+    * dnsmasq 2.82
     * dosfstools 3.0.28
-    * dropbear 2019.78
+    * dropbear 2020.80
     * e2fsprogs 1.42.13
     * espeak 1.48.04
     * expat 2.2.9
@@ -119,7 +119,7 @@ Latest changes:
     * gmp 6.1.2
     * gnu-make 4.2.1
     * gnutls 3.5.19
-    * haproxy 1.8.25
+    * haproxy 1.8.26
     * haserl 0.9.35
     * hplip 3.14.6
     * htop 1.0.3
@@ -199,7 +199,7 @@ Latest changes:
     * tinc 1.0.35/1.1pre17
     * tinyproxy 1.8.4
     * tmux 2.5
-    * tor 0.4.3.5
+    * tor 0.4.3.6
     * transmission 2.94
     * tree 1.8.0
     * uClibc++ 0.2.5-git
